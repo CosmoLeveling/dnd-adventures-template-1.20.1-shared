@@ -1,11 +1,8 @@
 package com.cosmo.dndadventures;
 
 import com.cosmo.dndadventures.networking.ModMessages;
-import com.cosmo.dndadventures.races.Races;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
-import net.minecraft.resource.ResourceType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

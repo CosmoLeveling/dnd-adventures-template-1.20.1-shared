@@ -1,5 +1,6 @@
-package com.cosmo.dndadventures.races;
+package com.cosmo.dndadventures.datagen;
 
+import com.cosmo.dndadventures.races.Races;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricCodecDataProvider;
 import net.minecraft.data.DataOutput;
@@ -13,7 +14,7 @@ import java.util.function.BiConsumer;
 public class RaceGenerator extends FabricCodecDataProvider<Races> {
 
 
-    protected RaceGenerator (FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+    public RaceGenerator(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(dataOutput, DataOutput.OutputType.DATA_PACK, "dndadventure/races" , Races.CODEC);
     }
 

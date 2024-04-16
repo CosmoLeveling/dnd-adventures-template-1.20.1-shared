@@ -26,9 +26,8 @@ public class SetC2SPacket {
     public static void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler,
                                PacketByteBuf buf, PacketSender responseSender) {
         //EveryThing here happens ONLY on the server!
-        ArrayList<String> race = Races.test;
         int num = racechoosingscreen.num;
-        RaceData.setRace(((EntityDataSaver) player),race.get(num));
+        RaceData.setRace(((EntityDataSaver) player),"test");
         player.sendMessage(Text.literal("race " + ((EntityDataSaver) player).getPersistentData().getString("race"))
                 .fillStyle(Style.EMPTY.withColor(Formatting.BLUE)), true);
         Objects.requireNonNull(player.getAttributeInstance(EntityAttributes.GENERIC_MAX_HEALTH)).setBaseValue(10);
