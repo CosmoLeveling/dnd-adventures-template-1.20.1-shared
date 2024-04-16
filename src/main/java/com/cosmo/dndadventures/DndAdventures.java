@@ -14,7 +14,7 @@ public class DndAdventures implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello I'm your neighbor!");
 		LOGGER.info("train");
-
+		ModRegistries.registerDynamicRegistries();
 		DndAdventures.LOGGER.info(DndAdventures.MOD_ID + " resources registered!");
 		ModMessages.registerC2SPackets();
 		ModMessages.registerS2CPackets();
