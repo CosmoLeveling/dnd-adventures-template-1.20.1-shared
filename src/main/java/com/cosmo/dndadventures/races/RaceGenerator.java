@@ -14,26 +14,19 @@ import java.util.function.BiConsumer;
 
 public class RaceGenerator extends FabricCodecDataProvider<Races> {
 
-    public static final Codec<Races> CODEC = RecordCodecBuilder.create(instance->instance.group(
-            Codec.INT.fieldOf("color").forGetter(CodecClass::)
-    ).apply(instance, Races::new));
 
     protected RaceGenerator (FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(dataOutput, registriesFuture, DataOutput.OutputType.DATA_PACK, , CODEC);
+        super(dataOutput, DataOutput.OutputType.DATA_PACK, "dndadventure/races" , Races.CODEC);
     }
 
     @Override
     public String getName() {
-        return RaceGenerator;
+        return "tree";
     }
 
-    @Override
-    protected void configure(BiConsumer<Identifier, > provider, RegistryWrapper.WrapperLookup lookup) {
-        provider.accept(Identifier.,"AN_OBJECT_OF_YOUR_TYPE");
-    }
 
     @Override
     protected void configure(BiConsumer<Identifier, Races> provider) {
-        provider.accept();
+        provider.accept(Identifier. ,"Race");
     }
 }

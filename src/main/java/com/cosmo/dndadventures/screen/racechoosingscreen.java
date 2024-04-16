@@ -16,8 +16,7 @@ import java.util.ArrayList;
 
 public class racechoosingscreen extends Screen {
 
-    ArrayList<String> t = Races.test;
-    ArrayList<Integer> s = Races.sped;
+
     public static int num = 0;
 
     public ButtonWidget selectbutton;
@@ -33,7 +32,7 @@ public class racechoosingscreen extends Screen {
                 .build();
         addDrawableChild(selectbutton);
         nextbutton = ButtonWidget.builder(Text.literal("next"), button -> {
-                    if(num<t.size()-1){
+                    if(num==0){
                         num+=1;
                     }else{
                         num=0;
@@ -48,8 +47,8 @@ public class racechoosingscreen extends Screen {
     public void render(DrawContext context, int mouseX, int mouseY, float delta) {
         // Render the background texture
         renderBackgroundTexture(context);
-        context.drawTextWithShadow(textRenderer, Text.literal("race: "+t.get(num)), 40,80, 0xffffff);
-        context.drawTextWithShadow(textRenderer, Text.literal("speed"+s.get(num)), 40,100,0xffffff);
+        context.drawTextWithShadow(textRenderer, Text.literal("race: "), 40,80, 0xffffff);
+        context.drawTextWithShadow(textRenderer, Text.literal("speed"), 40,100,0xffffff);
         // Call the super method to render other screen elements
         super.render(context, mouseX, mouseY, delta);
     }

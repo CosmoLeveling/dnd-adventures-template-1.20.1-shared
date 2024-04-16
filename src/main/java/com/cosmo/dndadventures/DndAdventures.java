@@ -15,13 +15,8 @@ public class DndAdventures implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		Races.setTest();
-		Races.setSped();
 		LOGGER.info("Hello I'm your neighbor!");
 		LOGGER.info("train");
-		// recipes
-		DishRecipeManager dishRecipeManager = new DishRecipeManager();
-		ResourceManagerHelper.get(ResourceType.SERVER_DATA).registerReloadListener(dishRecipeManager);
 
 		DndAdventures.LOGGER.info(DndAdventures.MOD_ID + " resources registered!");
 		ModMessages.registerC2SPackets();
