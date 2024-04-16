@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dnd-adventures",
+	"version": "${version}",
+	"name": "Dnd adventures",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Cosmo"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/dnd-adventures/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.cosmo.dndadventures.DndAdventures"
+		],
+		"client": [
+			"com.cosmo.dndadventures.DndAdventuresClient"
+		],
+		"fabric-datagen": [
+			"com.cosmo.dndadventures.DndAdventuresDataGenerator"
+		]
+	},
+	"mixins": [
+		"dnd-adventures.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
