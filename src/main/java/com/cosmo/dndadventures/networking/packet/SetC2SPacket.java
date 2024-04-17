@@ -11,6 +11,7 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.registry.Registry;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.network.ServerPlayNetworkHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -21,11 +22,14 @@ import net.minecraft.util.Formatting;
 import java.util.ArrayList;
 import java.util.Objects;
 
+import static com.cosmo.dndadventures.ModRegisteryKeys.RACES_KEY;
+
 
 public class SetC2SPacket {
     public static void receive(MinecraftServer server, ServerPlayerEntity player, ServerPlayNetworkHandler handler,
                                PacketByteBuf buf, PacketSender responseSender) {
         //EveryThing here happens ONLY on the server!
+
         int num = racechoosingscreen.num;
         RaceData.setRace(((EntityDataSaver) player),"test");
         player.sendMessage(Text.literal("race " + ((EntityDataSaver) player).getPersistentData().getString("race"))

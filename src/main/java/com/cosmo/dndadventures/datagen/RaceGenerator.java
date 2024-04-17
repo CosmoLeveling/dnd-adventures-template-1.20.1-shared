@@ -15,7 +15,7 @@ public class RaceGenerator extends FabricCodecDataProvider<Races> {
 
 
     public RaceGenerator(FabricDataOutput dataOutput, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
-        super(dataOutput, DataOutput.OutputType.DATA_PACK, "dndadventure/races" , Races.CODEC);
+        super(dataOutput, DataOutput.OutputType.DATA_PACK, "dndadventures/races" , Races.CODEC);
     }
 
     @Override
@@ -27,5 +27,6 @@ public class RaceGenerator extends FabricCodecDataProvider<Races> {
     @Override
     protected void configure(BiConsumer<Identifier, Races> provider) {
         provider.accept(new Identifier("dndadventures:tiefling"),new Races(10,10,10));
+        provider.accept(new Identifier("dndadventures:dargonborn"),new Races(12,12,12));
     }
 }

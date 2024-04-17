@@ -1,6 +1,7 @@
 package com.cosmo.dndadventures;
 
 import com.cosmo.dndadventures.networking.ModMessages;
+import com.cosmo.dndadventures.races.Races;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
@@ -36,5 +37,6 @@ public class DndAdventures implements ModInitializer {
 								});
 					});
 		});
+		
 	}
 }
