@@ -1,3 +1,10 @@
-// 1.20.1	2024-04-16T18:59:18.3123233	Dnd adventures/tree
-a4b9eb5d94501a4ba42beb18f12857576b4bea38 data\dndadventures\dndadventures\races\dargonborn.json
-a331f46ae98895bb3107aa7241971d8e09194370 data\dndadventures\dndadventures\races\tiefling.json
+// 1.20.1	2024-04-17T17:57:04.9936938	Dnd adventures/tree
+b5225a4e1be96e8f8175c3587e6812f970b55e47 data\dndadventures\dndadventures\races\half-elf.json
+ab0e434fe0432fc6d3ac997d52b7ccb841493034 data\dndadventures\dndadventures\races\half-orc.json
+3831b8e079e0f37d02a0fd6feedfb033afbbc902 data\dndadventures\dndadventures\races\halfling.json
+6b5bcd4fd799929e9cf44a1d01871becf4e2fdbf data\dndadventures\dndadventures\races\gnome.json
+7f58fd6a2d2b8c5185bf11e453f0eab930a06665 data\dndadventures\dndadventures\races\dragonborn.json
+14867f409e503d17df1cde99a3bb5e92735475cd data\dndadventures\dndadventures\races\human.json
+a3aaafdc5fbc8c60ebf0b0c089580ba4ad7e748c data\dndadventures\dndadventures\races\dwarf.json
+601c6922c8d4cc1383fed688fde5dae8cd6d5a09 data\dndadventures\dndadventures\races\tiefling.json
+2e830d4c452eb5494a341e8b531808fadfce5fd0 data\dndadventures\dndadventures\races\elf.json

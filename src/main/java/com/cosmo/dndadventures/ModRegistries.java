@@ -6,7 +6,7 @@ import net.fabricmc.fabric.api.event.registry.DynamicRegistries;
 
 public class ModRegistries {
     public static void registerDynamicRegistries() {
-        DynamicRegistries.register(ModRegisteryKeys.RACES_KEY, Races.CODEC);
+        DynamicRegistries.registerSynced(ModRegisteryKeys.RACES_KEY, Races.CODEC);
 
     }
 }
